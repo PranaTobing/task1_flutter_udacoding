@@ -132,6 +132,20 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final signinbutton = RichText(
+      text: TextSpan(
+        text: 'Already have an account? ',
+        style: TextStyle(fontSize: 14.0, color:Colors.white),
+        children: <TextSpan>[
+          TextSpan(
+            text: 'Sign In',
+            style: TextStyle(decoration: TextDecoration.underline, color: Colors.black),
+          )
+        ],
+      ),
+      textAlign: TextAlign.center,
+    );
+    
     return Scaffold(
       backgroundColor: Colors.orange[300],
       body: Center(
@@ -150,6 +164,8 @@ class _LoginPageState extends State<LoginPage> {
             confpass,
             SizedBox(height: 24.0,),
             signupButton,
+            SizedBox(height: 8.0,),
+            signinbutton
           ],
         )
       ),
