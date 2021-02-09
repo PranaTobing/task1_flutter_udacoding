@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Back to Register'),
+            title: Text('Log Out'),
             onTap: (){
               Navigator.of(context).pushNamed(LoginPage.tag);
             },
